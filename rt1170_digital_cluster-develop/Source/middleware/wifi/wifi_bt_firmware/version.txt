@@ -1,0 +1,34 @@
+SD8987 WIRELESS FIRMWARE
+========================
+
+Here are the details about the SD8987 firmware:
+
+1. Firmware Name:      SD-WLAN-UART-BT-8987-U16-MMC-W16.88.10.p47-16.26.10.p47-C4X16658-GPL
+
+SD8801 WIRELESS FIRMWARE
+========================
+
+Here are the details about the SD8801 firmware:
+
+1. Firmware Name:      SD-UAPSTA-8801-U16-MMC-W14.88.36.p145-C4X14646_R0-GPL
+
+SD8977 WIRELESS FIRMWARE
+========================
+
+Here are the details about the SD8977 firmware:
+
+1. Firmware Name:      SD-WLAN-UART-BT-8977-U16-MMC-W16.68.10.p49-16.26.10.p49-C4X16658_V2-GPL
+
+SD8978 WIRELESS FIRMWARE
+========================
+
+Here are the details about the SD8978 firmware:
+
+1. Firmware Name:      SD-WLAN-UART-BT-8978-U16-MMC-W16.68.10.p41-16.26.10.p41-C4X16653_V0-GPL
+
+SD8997 WIRELESS FIRMWARE
+========================
+
+Here are the details about the SD8997 firmware:
+
+1. Firmware Name:      SD-WLAN-UART-BT-8997-U16-MMC-W16.68.1.p176-16.26.1.p176-C4X16604_V4-GPL

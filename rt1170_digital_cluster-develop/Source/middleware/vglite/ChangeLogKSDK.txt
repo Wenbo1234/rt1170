@@ -1,0 +1,56 @@
+/*!
+@page middleware_log Middleware Change Log
+
+@section vglite VGLite GPU Driver
+  The current version of the VGLite GPU Driver is 3.0.1.
+  - version 3.0.1
+    - Changed:
+      - Removed "vg_lite_blit2" API function due to lack of hardware support
+      - Removed "vg_lite_scanline" API function due to lack of harware support
+      - Aggregated "vg_lite_error.h" API header file content into "vg_lite.h"
+      - Aggregated "vg_lite_features.h" API header file content into "vg_lite.h"
+      - Aggregated "vg_lite_matrix.h" API header file content into "vg_lite.h"
+      - Aggregated "vg_lite_path.h" API header file content into "vg_lite.h"
+      - Aggregated "vg_lite_util.h" API header file content into "vg_lite.h"
+      - (IMX-1861) Added return code to the "vg_lite_flush" API function
+      - Changed VGLite GPU driver license from proprietary to MIT
+    - Fixed:
+      - Fixed definition of "elm_alloc" function in Elementary toolkit
+      - (IMX-1869) Fixed initialization of aligned bytes in the command buffer
+      - (IMX-1821) Fixed inverted background colours when using "vg_lite_draw_pattern"
+      - Fixed hang when calling "vg_lite_flush" repeatedly
+      - (IMX-1861) Fix propagation of return codes from "stall", "submit", "vg_lite_flush" function calls
+  - version 2.0.14_rev1
+    - Changed:
+      - (IMX-1809) Fixed misspelling of "vg_lite_buffer_transparency_mode"
+      - (IMX-1778) Added verification of colour gradients parameters
+      - (IMX-1813) Added return code to the "vg_lite_hal_allocate_contiguous" function
+      - (MGG-204) Added return code to "vg_lite_finish"
+    - Fixed:
+      - (IMX-1808) Fixed "vg_lite_blit" failure on dynamically allocated buffers
+      - (IMX-1773) Fixed failure to create 16 colours gradients
+      - (IMX-1790) Fixed driver incorrectly reporting available heap space
+      - (IMX-1810) Fixed verification of raster image stride alignment
+      - (IMX-1810) Fixed verification of raster image colour depth
+      - (IMX-1816) Fixed "vg_lite_close" not releasing memory allocated from OS heap
+      - (MGG-201) Fixed hard fault caused by command buffer management
+      - (MGG-202) Fixed "vg_lite_hal_wait_interrupt" function ignoring the timeout
+      - (MGG-203) Fixed "vg_lite_draw" function always returning success
+  - version 2.0.13_rev2
+    - Fixed:
+      - (MGG-102) Fixed incorrect colour gradient clipping issue when using "vg_lite_draw_gradient" API
+      - (MGG-140) Fixed "vg_lite_draw_gradient" error when gradient is not covering the entire shape
+  - version 2.0.13_rev1
+    - Added:
+      - (MGG-88) Support for operating with BGRA2222, ABGR2222, ARGB2222 type images
+      - (MGG-88) Support for operating with ABGR4444, ARGB4444 type images
+      - (MGG-88) Support for operating with ABGR8888, ARGB8888 type images
+      - (MGG-88) Support for operating with XBGR8888, XRGB8888 type images
+      - (MGG-52) Improved GPU bus error reporting by using weak functions
+    - Changed:
+      - (MGG-66) Restructured GPU driver by exposing the HAL source code for easier integration with operating systems
+    - Fixed:
+      - (MGG-72) Fixed rough edges of vector artefacts when using the "vg_lite_draw_pattern" API
+      - (MGG-58) Fixed "vg_lite_blit_rect" API not supporting a zero Y coordinate
+  - version 2.0.13_rev0
+*/
